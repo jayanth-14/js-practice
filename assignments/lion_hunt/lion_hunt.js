@@ -1,4 +1,4 @@
-const savannahMap = "LLZ"
+const savannahMap = "LLLLLLLLLZ";
 const lengthOfMap = savannahMap.length;
 let shortestDistance = -1;
 let currentPosition = 1;
@@ -8,14 +8,13 @@ let lastAnimal = savannahMap[0];
 while (currentPosition < lengthOfMap) {
   const animalAtCurrentPosition = savannahMap[currentPosition];
   const notASpace = animalAtCurrentPosition !== " ";
-  if (notASpace && animalAtCurrentPosition !== lastAnimal) {
+  if (notASpace) {
+    const isCurrentDistanceShorter = shortestDistance === -1 || distanceFromLastAnimal <= shortestDistance;
+    const isBothAnimalsDifferent = animalAtCurrentPosition !== lastAnimal
+    shortestDistance = (isBothAnimalsDifferent && isCurrentDistanceShorter) ? distanceFromLastAnimal : shortestDistance;
     lastAnimal = animalAtCurrentPosition;
-    if ( distanceFromLastAnimal <= distanceFromLastAnimal) {
-      shortestDistance = distanceFromLastAnimal;
-      distanceFromLastAnimal = 0;
-    }
   }
-  distanceFromLastAnimal = distanceFromLastAnimal + 1;
+  distanceFromLastAnimal =  notASpace ? 0 : distanceFromLastAnimal + 1;
   currentPosition = currentPosition + 1;
 }
 
