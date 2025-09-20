@@ -6,28 +6,28 @@ if (copyOfNumber > 0) {
   binaryRepresentation = binaryRepresentation * 10 + remainderWhenHalfed;
   copyOfNumber = number / 2;
   if (copyOfNumber > 0) {
-    const remainderByHalfing = copyOfNumber % 2;
-    binaryRepresentation = binaryRepresentation * 10 + remainderByHalfing;
+    const remainderWhenHalfed = copyOfNumber % 2;
+    binaryRepresentation = binaryRepresentation * 10 + remainderWhenHalfed;
     copyOfNumber = number / 2;
     if (copyOfNumber > 0) {
-      const remainderByHalfing = copyOfNumber % 2;
-      binaryRepresentation = binaryRepresentation * 10 + remainderByHalfing;
+      const remainderWhenHalfed = copyOfNumber % 2;
+      binaryRepresentation = binaryRepresentation * 10 + remainderWhenHalfed;
       copyOfNumber = number / 2;
       if (copyOfNumber > 0) {
-        const remainderByHalfing = copyOfNumber % 2;
-        binaryRepresentation = binaryRepresentation * 10 + remainderByHalfing;
+        const remainderWhenHalfed = copyOfNumber % 2;
+        binaryRepresentation = binaryRepresentation * 10 + remainderWhenHalfed;
         copyOfNumber = number / 2;
         if (copyOfNumber > 0) {
-          const remainderByHalfing = copyOfNumber % 2;
-          binaryRepresentation = binaryRepresentation * 10 + remainderByHalfing;
+          const remainderWhenHalfed = copyOfNumber % 2;
+          binaryRepresentation = binaryRepresentation * 10 + remainderWhenHalfed;
           copyOfNumber = number / 2;
           if (copyOfNumber > 0) {
-            const remainderByHalfing = copyOfNumber % 2;
-            binaryRepresentation = binaryRepresentation * 10 + remainderByHalfing;
+            const remainderWhenHalfed = copyOfNumber % 2;
+            binaryRepresentation = binaryRepresentation * 10 + remainderWhenHalfed;
             copyOfNumber = number / 2;
             if (copyOfNumber > 0) {
-              const remainderByHalfing = copyOfNumber % 2;
-              binaryRepresentation = binaryRepresentation * 10 + remainderByHalfing;
+              const remainderWhenHalfed = copyOfNumber % 2;
+              binaryRepresentation = binaryRepresentation * 10 + remainderWhenHalfed;
               copyOfNumber = number / 2;
             }
           }
