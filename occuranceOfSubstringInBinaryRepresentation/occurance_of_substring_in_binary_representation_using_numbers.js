@@ -1,6 +1,6 @@
 const substring = 10;
 const number = 19;
-const occuranceCount = 2;
+let occuranceCount = 0;
 let copyOfNumber = number;
 let binaryRepresentation = 0;
 
@@ -24,6 +24,11 @@ let countOfDigitsInSubstring = 0;
 while (copyOfSubstring >= 1) {
   copyOfSubstring = copyOfSubstring / 10;
   countOfDigitsInSubstring = countOfDigitsInSubstring + 1;
+}
+
+let divider = 1;
+for (let currentPosition = 0; currentPosition < countOfDigitsInSubstring; currentPosition++){
+  divider = divider * 10;
 }
 
 console.log("The number of occurance of", substring,"in binary representation of",number,"(",binaryRepresentation,") is", occuranceCount);
