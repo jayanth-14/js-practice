@@ -1,3 +1,4 @@
 const substring = 10;
 const number = 65;
-console.log("The number of occurance of", substring,"in binary representation of",number,"(1000001) is 1");
+const binaryRepresentation = 1000001;
+console.log("The number of occurance of", substring,"in binary representation of",number,"(",binaryRepresentation,") is 1");
