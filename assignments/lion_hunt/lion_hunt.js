@@ -1,6 +1,6 @@
-const savannahMap = "L     Z";
+const savannahMap = "LLZ"
 const lengthOfMap = savannahMap.length;
-let shortestDistance = 0;
+let shortestDistance = -1;
 let currentPosition = 1;
 let distanceFromLastAnimal = 0;
 let lastAnimal = savannahMap[0];
