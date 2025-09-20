@@ -15,4 +15,13 @@ while (copyOfBinary >= 1) {
   binaryRepresentation = binaryRepresentation * 10 + lastDigit;
   copyOfBinary = (copyOfBinary - lastDigit) / 10;
 }
+
+let copyOfSubstring = substring;
+let countOfDigits = 0;
+while (copyOfSubstring >= 1) {
+  copyOfSubstring = copyOfSubstring / 10;
+  countOfDigits = countOfDigits + 1;
+}
+console.log("count of digits in substring is :", countOfDigits);
+
 console.log("The number of occurance of", substring,"in binary representation of",number,"(",binaryRepresentation,") is", occuranceCount);
