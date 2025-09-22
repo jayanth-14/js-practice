@@ -1,1 +1,3 @@
-console.log("The number of divisors for the number 6 is 4");
+const number = 0;
+const countOfDivisors = 0;
+console.log("The number of divisors for the number",number,"is", countOfDivisors);
