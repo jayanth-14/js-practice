@@ -30,7 +30,7 @@ function testResultSymbol(result, expectedOutput) {
 function testFunction(testInput, expectedOutput) {
   const result = getVowelCount(testInput);
   const resultSymbol = testResultSymbol(result, expectedOutput);
-  const testIntro = resultSymbol + " The count of vowels in " + testInput;
+  const testIntro = resultSymbol + " The count of vowels in \"" + testInput + "\"";
   console.log(testIntro, "is", expectedOutput, "and we got", result);
 }
 
