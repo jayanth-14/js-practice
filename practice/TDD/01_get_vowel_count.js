@@ -1,5 +1,5 @@
 function getVowelCount(string) {
-  return string;
+  return string.length;
 }
 
 // testing logic starts here
