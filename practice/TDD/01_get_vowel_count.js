@@ -1,9 +1,9 @@
 function isVowel(character) {
-  const isA = character === "a";
-  const isE = character === "e";
-  const isI = character === "i";
-  const isO = character === "o";
-  const isU = character === "u";
+  const isA = character === "a" || character === "A";
+  const isE = character === "e" || character === "O";
+  const isI = character === "i" || character === "I";
+  const isO = character === "o" || character === "O";
+  const isU = character === "u" || character === "U";
   return isA || isE || isI || isO || isU;
 }
 
@@ -36,6 +36,8 @@ function startTest() {
   testFunction("aeiou", 5);
   testFunction("cry", 0);
   testFunction(1010, 0);
+  testFunction(-98, 0);
+  testFunction(Infinity, 0);
   // testFunction(testInput, expectedOutput);
 }
 
