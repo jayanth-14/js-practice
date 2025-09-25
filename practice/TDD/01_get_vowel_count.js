@@ -1,5 +1,21 @@
+function isVowel(character) {
+  const isA = character === "a";
+  const isE = character === "e";
+  const isI = character === "i";
+  const isO = character === "o";
+  const isU = character === "u";
+  return isA || isE || isI || isO || isU;
+}
+
 function getVowelCount(string) {
-  return string.length;
+  let vowelCount = 0;
+  const length = string.length;
+  for (let currentPosition = 0; currentPosition < length; currentPosition++) {
+    if (isVowel(string[currentPosition])) {
+      vowelCount = vowelCount + 1;
+    }
+  }
+  return vowelCount;
 }
 
 // testing logic starts here
