@@ -1,9 +1,13 @@
+function isLetterSame(letter, lowerLetterToCheck, upperLetterToCheck) {
+  return letter === lowerLetterToCheck || letter === upperLetterToCheck;
+}
+
 function isVowel(character) {
-  const isA = character === "a" || character === "A";
-  const isE = character === "e" || character === "O";
-  const isI = character === "i" || character === "I";
-  const isO = character === "o" || character === "O";
-  const isU = character === "u" || character === "U";
+  const isA = isLetterSame(character, "a", "A");
+  const isE = isLetterSame(character, "e", "E");
+  const isI = isLetterSame(character, "i", "I");
+  const isO = isLetterSame(character, "o", "O");
+  const isU = isLetterSame(character, "u", "U");
   return isA || isE || isI || isO || isU;
 }
 
@@ -19,14 +23,14 @@ function getVowelCount(string) {
 }
 
 // testing logic starts here
-function testResultSymbol (result, expectedOutput) {
-  return (result === expectedOutput) ? "✅" : "❌" ;
+function testResultSymbol(result, expectedOutput) {
+  return (result === expectedOutput) ? "✅" : "❌";
 }
 
 function testFunction(testInput, expectedOutput) {
   const result = getVowelCount(testInput);
   const resultSymbol = testResultSymbol(result, expectedOutput);
-  const testIntro = resultSymbol +" The count of vowels in " + testInput;
+  const testIntro = resultSymbol + " The count of vowels in " + testInput;
   console.log(testIntro, "is", expectedOutput, "and we got", result);
 }
 
