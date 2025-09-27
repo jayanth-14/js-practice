@@ -101,3 +101,18 @@ if (role === "teacher") {
   dashboard = "gradebook";
   permissions = "view/edit/grade";
 }
+
+// if (age >= 65) {
+//   category = "senior";
+//   ticketPrice = 5;
+// } else {
+//   category = "adult";
+//   ticketPrice = 10;
+// }
+const age = 60;
+let category = "adult";
+let ticketPrice = 10;
+if (age >= 65) {
+  category = "senior";
+  ticketPrice = 5;
+}
