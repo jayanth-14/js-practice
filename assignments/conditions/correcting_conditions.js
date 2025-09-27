@@ -15,8 +15,8 @@ console.log(weather);
 // }
 
 const isMember = true;
-const discount = isMember ? 10 : 0;
-console.log(discount);
+// const discount = isMember ? 10 : 0;
+// console.log(discount);
 
 // if (day === "Saturday" || day === "Sunday") {
 //   isWeekend = true;
@@ -53,7 +53,20 @@ const userType = "admin";
 const isAdmin = userType === "admin";
 const canDelete = isAdmin;
 const baseAccess = isAdmin ? "all" : "limited";
-
 console.log("user type :", userType);
 console.log("can delete :", canDelete);
 console.log("base access :", baseAccess);
+
+// if (isPremiumUser) {
+//   discount = basePrice * 0.2;
+//   finalPrice = basePrice - discount;
+// } else {
+//   discount = basePrice * 0.05;
+//   finalPrice = basePrice - discount;
+// }
+const isPremiumUser = true;
+const basePrice = 500;
+const discountPercentage = isPremiumUser ? 0.2 : 0.05;
+const discount = basePrice * discountPercentage;
+const finalPrice = basePrice - discount;
+console.log(finalPrice);
