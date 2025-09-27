@@ -17,3 +17,12 @@ console.log(weather);
 const isMember = true;
 const discount = isMember ? 10 : 0;
 console.log(discount);
+
+// if (day === "Saturday" || day === "Sunday") {
+//   isWeekend = true;
+// } else {
+//   isWeekend = false;
+// }
+const day = "Sunday";
+const isWeekend = day === "Saturday" || day === "Sunday";
+console.log(isWeekend);
