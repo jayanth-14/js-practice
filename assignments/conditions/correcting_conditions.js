@@ -86,3 +86,18 @@ if (speed > 100) {
   message = "Too fast";
   penalty = 200;
 }
+
+// if (role === "teacher") {
+//   dashboard = "gradebook";
+//   permissions = "view/edit/grade";
+// } else {
+//   dashboard = "courses";
+//   permissions = "view";
+// }
+const role = "teacher";
+let dashboard = "courses";
+let permissions = "view";
+if (role === "teacher") {
+  dashboard = "gradebook";
+  permissions = "view/edit/grade";
+}
