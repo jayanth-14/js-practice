@@ -70,3 +70,19 @@ const discountPercentage = isPremiumUser ? 0.2 : 0.05;
 const discount = basePrice * discountPercentage;
 const finalPrice = basePrice - discount;
 console.log(finalPrice);
+
+// if (speed > 100) {
+//   message = "Too fast";
+//   penalty = 200;
+// } else {
+//   message = "OK";
+//   penalty = 0;
+// }
+
+const speed = 120;
+let message = "OK";
+let penalty = 0;
+if (speed > 100) {
+  message = "Too fast";
+  penalty = 200;
+}
