@@ -26,3 +26,13 @@ console.log(discount);
 const day = "Sunday";
 const isWeekend = day === "Saturday" || day === "Sunday";
 console.log(isWeekend);
+
+// if (cartItems.length === 0) {
+//   status = "empty";
+// } else {
+//   status = "ready";
+// }
+
+const cartItems = "hello";
+const cartStatus = cartItems.length ? "ready" : "empty";
+console.log(cartStatus);
