@@ -36,3 +36,24 @@ console.log(isWeekend);
 const cartItems = "hello";
 const cartStatus = cartItems.length ? "ready" : "empty";
 console.log(cartStatus);
+
+// if (userType === "admin") {
+//   baseAccess = "all";
+//   canDelete = true;
+// } else {
+//   baseAccess = "limited";
+//   canDelete = false;
+// }
+
+// const userType = "admin";
+// const canDelete = userType === "admin";
+// const baseAccess = canDelete ? "all" : "limited";
+
+const userType = "admin";
+const isAdmin = userType === "admin";
+const canDelete = isAdmin;
+const baseAccess = isAdmin ? "all" : "limited";
+
+console.log("user type :", userType);
+console.log("can delete :", canDelete);
+console.log("base access :", baseAccess);
